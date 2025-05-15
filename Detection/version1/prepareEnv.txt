@@ -1,0 +1,17 @@
+mkdir project
+cd project
+git clone https://github.com/ultralytics/yolov5
+sudo pip install virtualenv
+cd yolov5
+virtualenv env
+. env/bin/activate
+pip install -r requirements.txt
+pip3 install torch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1
+pip install gpiozero
+pip install RPi.GPIO
+pip install subprocess.run
+pip install time
+git clone https://github.com/AhmedOmrani10/YoloV5LogoDetection.git
+cd YoloV5LogoDetection
+mv P21_3.py /home/pi/Desktop/project/yolov5
+mv bestV2.pt /home/pi/Desktop/project/yolov5
